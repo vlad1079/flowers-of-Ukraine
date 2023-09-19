@@ -1,0 +1,159 @@
+@import url("fonts/stylesheet.css");
+
+$fontSize: 16px;
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($fontSize)}rem;
+}
+
+$colorWhite: #fff;
+$colorBlack: #333333;
+$fontFamily: Museo Sans Cyrl;
+
+* {
+    box-sizing: border-box;
+}
+
+header.header {
+    font-family: $fontFamily;
+    .header_top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $colorBlack;
+        font-size: 1rem;
+        color: $colorWhite;
+        .header_container {
+            max-width: rem(1450);
+            padding-left: rem(15);
+            padding-right: rem(15);
+            display: flex;
+            margin: 0 auto;
+            ul {
+                display: flex;
+                align-items: center;
+                column-gap: rem(60);
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: rem(15) 0 rem(14);
+                li {
+                    list-style: none;
+                    display: flex;
+                    column-gap: rem(12);
+                    width: 11%;
+                    span {
+                    }
+                    select {
+                        background-color: #333333;
+                        border: 1px solid #333333;
+                        appearance: none;
+                        background-image: url("../images/header/header_top/arrow.svg");
+                        background-repeat: no-repeat;
+                        background-position-x: center;
+                        background-position: 100%;
+                        background-size: 10px, 5.714px;
+                        width: 37%;
+                        option {
+                            background-color: #333333;
+                            border: 1px solid #333333;
+                        }
+                    }
+                }
+            }
+            ul:nth-of-type(1) {
+                display: flex;
+                padding-left: 0;
+                align-items: center;
+                flex: 1 1 auto;
+                li:nth-of-type(3) {
+                    width: 13%;
+                }
+                li:nth-of-type(4) {
+                    div {
+                        position: relative;
+                        span {
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            flex-shrink: 0;
+                            border-radius: 50%;
+                            background-color: $colorWhite;
+                            opacity: 0.7;
+                            font-size: rem(10);
+                            color: #414141;
+                            left: 60%;
+                        }
+                    }
+                }
+                li:nth-of-type(5) {
+                    width: 17%;
+                    align-items: center;
+                }
+            }
+            ul:nth-of-type(2) {
+                display: flex;
+                padding-right: 0;
+                align-items: center;
+                max-width: rem(174);
+                li {
+                    button {
+                        border: 0px solid transparent;
+                        background-color: transparent;
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+    }
+    .header_content {
+        padding-top: rem(65);
+        .header_content_container {
+            max-width: rem(1450);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-left: rem(15);
+            padding-right: rem(15);
+            margin: 0 auto;
+            .header_content_left {
+            }
+            .header_content_center {
+                flex: 1 1 auto;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                .header_content_center_search {
+                }
+                .header_content_center_menu {
+                    ul {
+                        display: flex;
+                        column-gap: rem(70);
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: rem(18);
+                        text-transform: none;
+                        list-style: none;
+                        li {
+                            a {
+                                color: $colorBlack;
+                                text-decoration: none;
+                            }
+                        }
+                        li:hover {
+                            a {
+                                color: #956D84;
+                            }
+                        }
+                    }
+                }
+            }
+            .header_content_right {
+            }
+        }
+    }
+}
