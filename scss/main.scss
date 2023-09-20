@@ -87,6 +87,7 @@ header.header {
                             font-size: rem(10);
                             color: #414141;
                             left: 60%;
+                            text-align: center;
                         }
                     }
                 }
@@ -128,6 +129,25 @@ header.header {
                 flex-direction: column;
                 margin: 0 auto;
                 .header_content_center_search {
+                    max-width: rem(820);
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    column-gap: rem(21);
+                    input {
+                        width: 100%;
+                        border-bottom: 1px solid #956d84;
+                        border-top: 0;
+                        border-left: 0;
+                        border-right: 0;
+                    }
+                    input:nth-of-type(1) {
+                        max-width: 22.6%;
+                    }
+                    input:nth-of-type(2) {
+                        max-width: 73.2%;
+                    }
                 }
                 .header_content_center_menu {
                     ul {
@@ -146,13 +166,43 @@ header.header {
                         }
                         li:hover {
                             a {
-                                color: #956D84;
+                                color: #956d84;
                             }
                         }
                     }
                 }
             }
             .header_content_right {
+                padding-right: 0;
+                display: flex;
+                flex-direction: column;
+                row-gap: rem(16px);
+                ul {
+                    display: flex;
+                    list-style: none;
+                    column-gap: 13px;
+                    align-items: center;
+                    margin: 0 auto;
+                    padding-left: 0;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: rem(16);
+                    font-weight: 300;
+                    line-height: rem(18);
+                    color: #333;
+                }
+                div {
+                    display: flex;
+                    column-gap: 19px;
+                    align-items: center;
+                    span {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 10px;
+                    }
+                }
             }
         }
     }
