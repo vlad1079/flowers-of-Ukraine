@@ -118,6 +118,7 @@ header.header {
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
             padding-left: rem(15);
             padding-right: rem(15);
             margin: 0 auto;
@@ -203,6 +204,84 @@ header.header {
                         line-height: 10px;
                     }
                 }
+            }
+        }
+    }
+}
+
+// main
+
+main.main {
+    .main_container {
+        max-width: rem(1450);
+        width: 100%;
+        padding-left: rem(15);
+        padding-right: rem(15);
+        padding-top: rem(55);
+        margin: 0 auto;
+        .main_discount {
+            display: grid;
+            grid-template-areas:
+                "a a b c"
+                "a a d e";
+            grid-template-columns: repeat(4, minmax(200px, 1fr));
+            gap: rem(28);
+            .main_discount1 {
+                grid-area: 1 / 1 / 3 / 3;
+                img {
+                    width: 100%;
+                }
+            }
+            .main_discount2 {
+                grid-area: 1 / 3 / 2 / 4;
+                img {
+                    width: 100%;
+                }
+            }
+            .main_discount3 {
+                grid-area: 1 / 4 / 2 / 5;
+                img {
+                    width: 100%;
+                }
+            }
+            .main_discount4 {
+                grid-area: 2 / 3 / 3 / 4;
+                max-width: rem(336);
+                max-height: rem(321);
+                background-color: #ffdb6b;
+                img {
+                    width: calc(100vw / 4 - 69px);
+                    display: block;
+                    max-width: rem(336);
+                    max-height: rem(321);
+                    margin-left: auto;
+                    object-fit: cover;
+                }
+            }
+            .main_discount5 {
+            }
+            .main_discount6 {
+                grid-area: 2 / 4 / 3 / 5;
+                max-width: rem(336);
+                max-height: rem(321);
+                position: relative;
+                picture:nth-of-type(1)  {
+                    img {
+                    width: 100%;
+                }
+                }
+                picture:nth-of-type(2)  {
+                    img {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    right: 0;
+                }
+                }
+            }
+            .main_discount7 {
+            }
+            .main_discount8 {
             }
         }
     }
