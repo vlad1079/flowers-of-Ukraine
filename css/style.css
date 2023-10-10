@@ -8,7 +8,7 @@
           box-sizing: border-box; }
 
 header.header {
-  font-family: Museo Sans Cyrl; }
+  font-family: "Museo Sans Cyrl 500"; }
   header.header .header_top {
     position: fixed;
     width: 100%;
@@ -218,7 +218,7 @@ header.header {
             line-height: 10px; }
 
 main.main {
-  font-family: Museo Sans Cyrl; }
+  font-family: "Museo Sans Cyrl 500"; }
   main.main .main_container {
     max-width: 90.625rem;
     width: 100%;
@@ -290,7 +290,7 @@ main.main {
               column-gap: 1.25rem;
       margin: 0 auto;
       width: 100%;
-      font-family: Museo Sans Cyrl;
+      font-family: "Museo Sans Cyrl 500";
       padding-bottom: 3rem; }
       main.main .main_container .main_photo_report .main_photo_report_blocks > div {
         width: calc(100vw / 3 - 20px); }
@@ -481,6 +481,7 @@ main.main {
           color: #fff;
           text-align: center;
           font-family: Museo Sans Cyrl;
+          font-style: normal;
           font-size: 1rem;
           font-weight: 700;
           line-height: 1.125rem;
@@ -489,10 +490,11 @@ main.main {
           -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
                   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
           max-width: 13.75rem;
+          width: 100%;
           padding: 1.375rem 3.25rem;
           margin-bottom: 0.875rem; }
         main.main .main_container .main_stock .main_stock_blocks .main_stock_card a:nth-of-type(2) {
-          color: var(--Gray-3, #828282);
+          color: #828282;
           text-align: center;
           font-family: Euclid Circular B;
           font-size: 1rem;
@@ -503,6 +505,96 @@ main.main {
                   text-decoration-line: underline; }
     main.main .main_container .main_stock .main_stock_card:nth-of-type(4n + 4) > picture > img {
       position: relative;
+      max-width: 17.5625rem;
       padding-bottom: 4.6875rem; }
+    main.main .main_container .main_sesonal > h2 {
+      color: #000;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.125rem; }
+    main.main .main_container .main_sesonal .main_sesonal_arrow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end;
+      -webkit-column-gap: 1.6875rem;
+              column-gap: 1.6875rem; }
+    main.main .main_container .main_sesonal .main_sesonal_blocks {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(190px, 1fr));
+      gap: 1.25rem; }
+      main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card {
+        position: relative;
+        border: 1px solid #956d84;
+        padding: 5px 20px 15px 20px;
+        background-color: #fff;
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(1) img {
+          position: absolute;
+          top: 7%;
+          right: 9%; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(2) img {
+          width: 100%; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card > span {
+          position: absolute;
+          right: 5%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: #956d84;
+          font-family: Euclid Circular B;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.125rem;
+          width: 56px;
+          height: 56px;
+          border: 1px solid rgba(157, 117, 140, 0.39);
+          border-radius: 50%;
+          background-color: rgba(157, 117, 140, 0.39);
+          text-transform: uppercase;
+          font-family: MyWebFont;
+          margin-left: auto; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > h3 {
+            color: #333333;
+            font-size: 1.125rem;
+            font-weight: 300;
+            line-height: 1.125rem; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > span {
+            color: #956d84;
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 1.125rem;
+            min-width: -webkit-max-content;
+            min-width: -moz-max-content;
+            min-width: max-content; }
 
 /*# sourceMappingURL=style.css.map */
