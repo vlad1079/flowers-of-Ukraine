@@ -510,7 +510,143 @@ main.main {
         position: relative;
         max-width: 17.5625rem;
         padding-bottom: 4.6875rem; }
-    main.main .main_container .main_sesonal .main_sesonal_top {
+    main.main .main_container .main_sesonal {
+      padding-bottom: 9rem; }
+      main.main .main_container .main_sesonal .main_sesonal_top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 2.125rem; }
+        main.main .main_container .main_sesonal .main_sesonal_top > h2 {
+          color: #000;
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 1.125rem;
+          -webkit-box-flex: 1;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto; }
+        main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-column-gap: 1.6875rem;
+                  column-gap: 1.6875rem; }
+      main.main .main_container .main_sesonal .main_sesonal_blocks {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(190px, 1fr));
+        gap: 1.25rem; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card {
+          position: relative;
+          border: 1px solid #956d84;
+          padding: 5px 20px 15px 20px;
+          background-color: #fff;
+          -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+                  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(1) img {
+            position: absolute;
+            top: 7%;
+            right: 9%; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(2) img {
+            width: 100%; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card > span {
+            position: absolute;
+            right: 5%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            color: #956d84;
+            font-family: Euclid Circular B;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.125rem;
+            width: 56px;
+            height: 56px;
+            border: 1px solid rgba(157, 117, 140, 0.39);
+            border-radius: 50%;
+            background-color: rgba(157, 117, 140, 0.39);
+            text-transform: uppercase;
+            font-family: MyWebFont;
+            margin-left: auto; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > h3 {
+              color: #333333;
+              font-size: 1.125rem;
+              font-weight: 300;
+              line-height: 1.125rem; }
+            main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > span {
+              color: #956d84;
+              font-size: 1.125rem;
+              font-weight: 700;
+              line-height: 1.125rem;
+              min-width: -webkit-max-content;
+              min-width: -moz-max-content;
+              min-width: max-content; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:first-of-type {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            font-family: "Museo Sans Cyrl";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.125rem;
+            padding: 1.375rem 3.25rem;
+            max-width: 13.75rem;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 0.4375rem;
+            background-color: #956d84;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset; }
+          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:last-of-type {
+            color: #828282;
+            text-align: center;
+            font-family: Euclid Circular B;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.125rem;
+            -webkit-text-decoration-line: underline;
+                    text-decoration-line: underline;
+            padding-top: 1rem; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 2) .main_sesonal_card_top {
+          padding-bottom: 3.5625rem; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 3) .main_sesonal_card_top {
+          padding-bottom: 4.1875rem; }
+        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 4) .main_sesonal_card_top {
+          padding-bottom: 6.625rem; }
+    main.main .main_container .main_gift .main_gift_top {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -521,32 +657,28 @@ main.main {
           -ms-flex-align: center;
               align-items: center;
       padding-bottom: 2.125rem; }
-      main.main .main_container .main_sesonal .main_sesonal_top > h2 {
+      main.main .main_container .main_gift .main_gift_top > h2 {
         color: #000;
         text-align: center;
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1.125rem;
         -webkit-box-flex: 1;
             -ms-flex: 1 1 auto;
-                flex: 1 1 auto; }
-      main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow {
+                flex: 1 1 auto;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.125rem; }
+      main.main .main_container .main_gift .main_gift_top .main_gift_arrow {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-column-gap: 1.6875rem;
                 column-gap: 1.6875rem; }
-    main.main .main_container .main_sesonal .main_sesonal_blocks {
+    main.main .main_container .main_gift .main_gift_blocks {
       display: grid;
       grid-template-columns: repeat(4, minmax(190px, 1fr));
       gap: 1.25rem; }
-      main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card {
+      main.main .main_container .main_gift .main_gift_blocks .main_gift_card {
         position: relative;
         border: 1px solid #956d84;
-        padding: 5px 20px 15px 20px;
-        background-color: #fff;
-        -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
-                box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -555,16 +687,18 @@ main.main {
             -ms-flex-direction: column;
                 flex-direction: column;
         -ms-flex-pack: distribute;
-            justify-content: space-around; }
-        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(1) img {
+            justify-content: space-around;
+        padding: 1.25rem 1.25rem 0.9375rem 1.25rem; }
+        main.main .main_container .main_gift .main_gift_blocks .main_gift_card > picture:nth-of-type(1) > img {
           position: absolute;
-          top: 7%;
-          right: 9%; }
-        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(2) img {
+          top: 4%;
+          right: 7%; }
+        main.main .main_container .main_gift .main_gift_blocks .main_gift_card > picture:nth-of-type(2) > img {
           width: 100%; }
-        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card > span {
+        main.main .main_container .main_gift .main_gift_blocks .main_gift_card > span {
           position: absolute;
-          right: 5%;
+          top: 50%;
+          right: 7%;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -579,15 +713,12 @@ main.main {
           font-size: 1rem;
           font-weight: 400;
           line-height: 1.125rem;
-          width: 56px;
-          height: 56px;
-          border: 1px solid rgba(157, 117, 140, 0.39);
+          width: 3.5rem;
+          height: 3.5rem;
           border-radius: 50%;
           background-color: rgba(157, 117, 140, 0.39);
-          text-transform: uppercase;
-          font-family: MyWebFont;
-          margin-left: auto; }
-        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price {
+          text-transform: uppercase; }
+        main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -597,12 +728,12 @@ main.main {
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between; }
-          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > h3 {
+          main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price > h3 {
             color: #333333;
             font-size: 1.125rem;
             font-weight: 300;
             line-height: 1.125rem; }
-          main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > span {
+          main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price > span {
             color: #956d84;
             font-size: 1.125rem;
             font-weight: 700;
@@ -610,11 +741,11 @@ main.main {
             min-width: -webkit-max-content;
             min-width: -moz-max-content;
             min-width: max-content; }
-        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:first-of-type {
+        main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:first-of-type {
           text-decoration: none;
           color: #fff;
           text-align: center;
-          font-family: "Museo Sans Cyrl 500";
+          font-family: "Museo Sans Cyrl";
           font-size: 1rem;
           font-style: normal;
           font-weight: 700;
@@ -627,7 +758,7 @@ main.main {
           background-color: #956d84;
           -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
                   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset; }
-        main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:last-of-type {
+        main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:last-of-type {
           color: #828282;
           text-align: center;
           font-family: Euclid Circular B;
@@ -636,12 +767,172 @@ main.main {
           font-weight: 400;
           line-height: 1.125rem;
           -webkit-text-decoration-line: underline;
-                  text-decoration-line: underline; }
-      main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n+2) .main_sesonal_card_top {
-        padding-bottom: 3.5625rem; }
-      main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n+3) .main_sesonal_card_top {
-        padding-bottom: 4.1875rem; }
-      main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n+4) .main_sesonal_card_top {
-        padding-bottom: 6.625rem; }
+                  text-decoration-line: underline;
+          padding-top: 1rem; }
+    main.main .main_container .main_forum {
+      padding-bottom: 5rem; }
+      main.main .main_container .main_forum .main_forum_top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main.main .main_container .main_forum .main_forum_top > h2 {
+          color: #000;
+          text-align: center;
+          -webkit-box-flex: 1;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto;
+          font-family: "Museo Sans Cyrl";
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 1.125rem; }
+        main.main .main_container .main_forum .main_forum_top .main_forum_top_new > a {
+          max-width: 8.9375rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-column-gap: 0.25rem;
+                  column-gap: 0.25rem;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-decoration: none; }
+      main.main .main_container .main_forum .main_forum_blocks {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(190px, 1fr));
+        -webkit-column-gap: 1.25rem;
+                column-gap: 1.25rem; }
+        main.main .main_container .main_forum .main_forum_blocks picture img {
+          width: 100%; }
+        main.main .main_container .main_forum .main_forum_blocks .main_forum_blocks_card {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #956d84), color-stop(30%, white));
+          background-image: linear-gradient(to top, #956d84 70%, white 30%);
+          padding: 0 1.25rem 1.25rem;
+          text-decoration: none; }
+          main.main .main_container .main_forum .main_forum_blocks .main_forum_blocks_card > h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.5625rem; }
+          main.main .main_container .main_forum .main_forum_blocks .main_forum_blocks_card > p {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 250;
+            line-height: 1.125rem; }
+    main.main .main_container .main_map_contact {
+      padding-bottom: 5.3125rem;
+      position: relative; }
+      main.main .main_container .main_map_contact .main_map_contact_content {
+        position: absolute;
+        top: 0;
+        right: 15%;
+        max-width: 23.75rem;
+        width: 100%;
+        height: 100%;
+        max-height: 31.75rem;
+        background-color: #fff;
+        -webkit-filter: drop-shadow(4px 0px 10px rgba(0, 0, 0, 0.15)) drop-shadow(-4px 0px 10px rgba(0, 0, 0, 0.15));
+                filter: drop-shadow(4px 0px 10px rgba(0, 0, 0, 0.15)) drop-shadow(-4px 0px 10px rgba(0, 0, 0, 0.15));
+        padding: 25px 72px 25px 72px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 100%; }
+        main.main .main_container .main_map_contact .main_map_contact_content a,
+        main.main .main_container .main_map_contact .main_map_contact_content span {
+          text-decoration: none;
+          color: #333333;
+          font-family: "Museo Sans Cyrl";
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 1.125rem; }
+        main.main .main_container .main_map_contact .main_map_contact_content > picture:nth-of-type(1) {
+          text-align: center; }
+        main.main .main_container .main_map_contact .main_map_contact_content > div:nth-of-type(1) a {
+          display: block; }
+        main.main .main_container .main_map_contact .main_map_contact_content > div:last-of-type {
+          max-width: 9rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-column-gap: 1.3125rem;
+                  column-gap: 1.3125rem; }
+          main.main .main_container .main_map_contact .main_map_contact_content > div:last-of-type > a {
+            display: block;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #956d84;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            text-decoration: none; }
+
+footer.footer {
+  background-color: #333333;
+  list-style: none;
+  color: #fff;
+  font-family: "Museo Sans Cyrl 500"; }
+  footer.footer .footer_container {
+    max-width: 90.625rem;
+    margin: 0 auto;
+    padding: 2.625rem 0.9375rem 2.5625rem 0.9375rem; }
+    footer.footer .footer_container .footer_top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      footer.footer .footer_container .footer_top .footer_top_left picture img {
+        width: 100%; }
+      footer.footer .footer_container .footer_top .footer_top_right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        footer.footer .footer_container .footer_top .footer_top_right a {
+          color: #fff;
+          text-decoration: none; }
+        footer.footer .footer_container .footer_top .footer_top_right ul, footer.footer .footer_container .footer_top .footer_top_right li {
+          list-style: none; }
 
 /*# sourceMappingURL=style.css.map */
