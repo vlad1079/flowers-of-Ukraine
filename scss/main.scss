@@ -313,7 +313,7 @@ main.main {
                 margin: 0 auto;
                 width: 100%;
                 font-family: $fontFamily;
-                padding-bottom: rem(48);
+                padding-bottom: rem(115);
                 & > div {
                     width: calc(100vw / 3 - 20px);
                     img {
@@ -381,17 +381,24 @@ main.main {
         }
         .main_stock {
             padding-bottom: rem(140);
-            & > h2 {
-                color: $colorBlack;
-                text-align: center;
-                font-size: rem(48);
-                font-weight: 700;
-                line-height: rem(18);
-            }
-            .main_stock_arrow {
+            .main_stock_top {
                 display: flex;
-                justify-content: end;
-                column-gap: rem(27);
+                justify-content: center;
+                align-items: center;
+                padding-bottom: rem(35);
+                & > h2 {
+                    flex: 1 1 auto;
+                    color: $colorBlack;
+                    text-align: center;
+                    font-size: rem(48);
+                    font-weight: 700;
+                    line-height: rem(18);
+                }
+                .main_stock_arrow {
+                    display: flex;
+                    justify-content: end;
+                    column-gap: rem(27);
+                }
             }
             .main_stock_blocks {
                 display: grid;
@@ -651,6 +658,7 @@ main.main {
             }
         }
         .main_gift {
+            padding-bottom: rem(115);
             .main_gift_top {
                 display: flex;
                 justify-content: center;
@@ -768,6 +776,7 @@ main.main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-bottom: rem(43);
                 & > h2 {
                     color: $colorRealBlack;
                     text-align: center;
@@ -842,7 +851,7 @@ main.main {
                 a,
                 span {
                     text-decoration: none;
-                    color:$colorBlack;
+                    color: $colorBlack;
                     font-family: $fontMyseo;
                     font-size: rem(16);
                     font-weight: 300;
@@ -880,9 +889,8 @@ main.main {
 // footer
 footer.footer {
     background-color: $colorBlack;
-    list-style: none;
     color: $colorWhite;
-    font-family: $fontFamily;
+    font-family: $fontMyseo;
     .footer_container {
         max-width: rem(1450);
         margin: 0 auto;
@@ -890,7 +898,9 @@ footer.footer {
         .footer_top {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            column-gap: rem(20);
+            padding-bottom: rem(50);
+            border-bottom: 1px solid $colorBord;
             .footer_top_left {
                 picture {
                     img {
@@ -900,14 +910,46 @@ footer.footer {
             }
             .footer_top_right {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                column-gap: rem(95);
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 18px;
                 a {
                     color: $colorWhite;
                     text-decoration: none;
                 }
-                ul , li {
-                    list-style: none;
+                ul {
+                    & > li:nth-of-type(1) {
+                        font-size: rem(18);
+                        font-weight: 700;
+                        line-height: rem(18);
+                        padding-bottom: rem(38);
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .footer_bottom {
+            padding-top: rem(20);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: rem(16);
+            font-weight: 300;
+            line-height: rem(18);
+            & > div {
+                display: flex;
+                column-gap: rem(28);
+                align-items: center;
+                & > picture {
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
