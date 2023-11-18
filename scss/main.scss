@@ -1151,22 +1151,12 @@ footer.footer {
                             transform: scale(1) translate(0px, -50%);
                         }
                         .header_content_center_menu_burger_list._active {
-                            // position: fixed;
                             display: block;
-                            // justify-content: space-between;
-                            // align-items: center;
-                            // background-color: $colorBlack;
-                            // left: 0;
-                            // top: 0;
-                            // width: 100%;
-                            // height: 100%;
-                            // max-height: rem(70);
-                            // transition: left 0.3s ease 0s;
+                            transition: left 0.3s ease 0s;
                             padding: rem(26) rem(20) rem(28) rem(20);
-                            ul.header_content_center_menu_burger_sub._active {
+                            ul.header_content_center_menu_burger_sub {
                                 position: fixed;
                                 display: flex;
-                                // align-items: center;
                                 flex-direction: column;
                                 background-color: $colorWhite;
                                 left: 0;
@@ -1176,11 +1166,11 @@ footer.footer {
                                 transition: left 0.3s ease 0s;
                                 // font-size: rem(24);
                                 color: $colorBlack;
-                                // text-align: center;
                                 font-family: $fontMyseo;
                                 font-size: rem(16);
                                 font-weight: 300;
                                 line-height: rem(18);
+                                overflow: auto;
                                 & > li:nth-of-type(1) {
                                     display: flex;
                                     justify-content: space-between;
@@ -1188,6 +1178,8 @@ footer.footer {
                                     padding: rem(24) rem(15);
                                     background-color: $colorBlack;
                                     margin-bottom: rem(30);
+                                    margin-left: 0;
+                                    margin-right: 0;
                                     & > a {
                                         color: $colorWhite;
                                         font-size: rem(14);
@@ -1220,13 +1212,16 @@ footer.footer {
                                 }
                                 & > li {
                                     // margin: 0 0 30px 0;
-                                    padding-left: rem(15);
-                                    padding-right: rem(15);
+                                    // padding-left: rem(15);
+                                    // padding-right: rem(15);
+                                    margin-left: rem(20);
+                                    margin-right: rem(20);
                                 }
                                 & > li:nth-of-type(2) {
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
+                                    margin-bottom: rem(73);
                                     a {
                                         color: $colorWhite;
                                         text-align: center;
@@ -1243,6 +1238,8 @@ footer.footer {
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
+                                    padding-top: rem(37);
+                                    padding-bottom: rem(37);
                                     a {
                                         color: $colorBord;
                                         font-size: rem(16);
@@ -1250,11 +1247,40 @@ footer.footer {
                                         line-height: rem(18);
                                     }
                                 }
-                                & > :nth-of-type(1n + 4) {
+                                & > li:nth-of-type(1n + 4) {
                                     padding-top: rem(26);
                                     padding-bottom: rem(23);
                                     border-bottom: 1px solid #CCCCCC;
                                 }
+                                & > li:nth-of-type(4) {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                & > li:nth-of-type(10) {
+                                    display: flex;
+                                    column-gap: rem(14);
+                                    align-items: center;
+                                    & > a {
+                                        color: $colorBord;
+                                        font-weight: 700;
+                                    }
+                                }
+                                & > li:nth-of-type(11) {
+                                    display: flex;
+                                    column-gap: rem(23);
+                                    align-items: center;
+                                    border: none;
+                                    padding-top: rem(43);
+                                    padding-bottom: 0;
+                                    margin-bottom: rem(50);
+                                }
+                            }
+                        }
+                        .header_content_center_menu_burger_list {
+                            transition: left 0.3s ease 0s;
+                            ul.header_content_center_menu_burger_sub {
+                                left: -100%;
                             }
                         }
                         & > ul:nth-of-type(1) {
