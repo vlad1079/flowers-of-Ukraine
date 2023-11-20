@@ -243,78 +243,80 @@ main.main {
         padding-right: rem(15);
         padding-top: rem(302);
         margin: 0 auto;
-        .main_discount {
-            display: grid;
-            grid-template-areas:
-                "a a b c"
-                "a a d e";
-            grid-template-columns: repeat(4, minmax(200px, 1fr));
-            gap: rem(28);
-            padding-bottom: rem(48);
-            div {
-                position: relative;
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                    height: 100%;
-                }
-                & > span {
-                    position: absolute;
-                    top: rem(40);
-                    left: 12%;
-                    font-size: rem(36);
-                    font-weight: 700;
-                    line-height: rem(40);
-                    text-align: center;
-                }
-            }
-            .main_discount1 {
-                grid-area: 1 / 1 / 3 / 3;
-                & > span {
-                    max-width: rem(397);
-                }
-            }
-            .main_discount2 {
-                grid-area: 1 / 3 / 2 / 4;
-            }
-            .main_discount3 {
-                grid-area: 1 / 4 / 2 / 5;
-            }
-            .main_discount4 {
-                grid-area: 2 / 3 / 3 / 4;
-                max-width: rem(336);
-                max-height: rem(321);
-                background-color: #ffdb6b;
-                picture {
+        .main_discount_container {
+            .main_discount {
+                display: grid;
+                grid-template-areas:
+                    "a a b c"
+                    "a a d e";
+                grid-template-columns: repeat(4, minmax(200px, 1fr));
+                gap: rem(28);
+                padding-bottom: rem(48);
+                div {
+                    position: relative;
                     img {
-                        width: calc(100vw / 4 - 69px);
-                        display: block;
-                        max-width: rem(336);
-                        max-height: rem(321);
-                        height: 100%;
-                        margin-left: auto;
+                        width: 100%;
                         object-fit: cover;
+                        height: 100%;
                     }
-                }
-            }
-            .main_discount5 {
-            }
-            .main_discount6 {
-                grid-area: 2 / 4 / 3 / 5;
-                max-width: rem(336);
-                max-height: rem(321);
-                position: relative;
-                picture:nth-of-type(2) {
-                    img {
+                    & > span {
                         position: absolute;
-                        bottom: 0;
-                        right: 0;
+                        top: rem(40);
+                        left: 12%;
+                        font-size: rem(36);
+                        font-weight: 700;
+                        line-height: rem(40);
+                        text-align: center;
                     }
                 }
-            }
-            .main_discount7 {
-            }
-            .main_discount8 {
+                .main_discount1 {
+                    grid-area: 1 / 1 / 3 / 3;
+                    & > span {
+                        max-width: rem(397);
+                    }
+                }
+                .main_discount2 {
+                    grid-area: 1 / 3 / 2 / 4;
+                }
+                .main_discount3 {
+                    grid-area: 1 / 4 / 2 / 5;
+                }
+                .main_discount4 {
+                    grid-area: 2 / 3 / 3 / 4;
+                    max-width: rem(336);
+                    max-height: rem(321);
+                    background-color: #ffdb6b;
+                    picture {
+                        img {
+                            width: calc(100vw / 4 - 69px);
+                            display: block;
+                            max-width: rem(336);
+                            max-height: rem(321);
+                            height: 100%;
+                            margin-left: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .main_discount5 {
+                }
+                .main_discount6 {
+                    grid-area: 2 / 4 / 3 / 5;
+                    max-width: rem(336);
+                    max-height: rem(321);
+                    position: relative;
+                    picture:nth-of-type(2) {
+                        img {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                }
+                .main_discount7 {
+                }
+                .main_discount8 {
+                }
             }
         }
 
@@ -973,6 +975,9 @@ footer.footer {
 }
 
 @media screen and (min-width: 250px) and (max-width: 420px) {
+    body._lock {
+        overflow: hidden;
+    }
     header.header {
         .header_top {
             // background-color: $colorBlack;
@@ -1250,7 +1255,7 @@ footer.footer {
                                 & > li:nth-of-type(1n + 4) {
                                     padding-top: rem(26);
                                     padding-bottom: rem(23);
-                                    border-bottom: 1px solid #CCCCCC;
+                                    border-bottom: 1px solid #cccccc;
                                 }
                                 & > li:nth-of-type(4) {
                                     display: flex;
@@ -1278,6 +1283,7 @@ footer.footer {
                             }
                         }
                         .header_content_center_menu_burger_list {
+                            display: block;
                             transition: left 0.3s ease 0s;
                             ul.header_content_center_menu_burger_sub {
                                 left: -100%;
