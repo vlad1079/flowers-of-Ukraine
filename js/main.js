@@ -37,6 +37,11 @@ if (window.outerWidth < 421) {
     mainDiscountImage4.classList.add('swiper-slide');
     // mainDiscountImage5.classList.add('swiper-slide');
     mainDiscountImage6.classList.add('swiper-slide');
+    var mySwiper = new Swiper('.main_discount_container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+    });
 }
 else if (window.outerWidth > 421) {
     mainDiscountCont.classList.remove('swiper');
@@ -47,6 +52,8 @@ else if (window.outerWidth > 421) {
     mainDiscountImage4.classList.remove('swiper-slide');
     // mainDiscountImage5.classList.remove('swiper-slide');
     mainDiscountImage6.classList.remove('swiper-slide');
+    if (typeof mySwiper != 'undefined') {
+        mySwiper.destroy();
+        mySwiper = undefined;
+    }
 }
-
-new Swiper('.main_discount_container');
