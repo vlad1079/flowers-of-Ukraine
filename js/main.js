@@ -45,7 +45,7 @@ if (window.outerWidth < 421) {
 }
 else if (window.outerWidth > 421) {
     mainDiscountCont.classList.remove('swiper');
-    mainDiscountCont.classList.remove('swiper-wrapper');
+    mainDiscount.classList.remove('swiper-wrapper');
     mainDiscountImage1.classList.remove('swiper-slide');
     mainDiscountImage2.classList.remove('swiper-slide');
     mainDiscountImage3.classList.remove('swiper-slide');
@@ -57,3 +57,49 @@ else if (window.outerWidth > 421) {
         mySwiper = undefined;
     }
 }
+
+// slider Swiper2
+
+const mainStock = document.querySelector('.main_stock');
+const mainStockBlocks = document.querySelector('.main_stock_blocks');
+
+new Swiper('.main_stock', {
+    // slidesPerView: 4,
+    // spaceBetween: 27,
+    slidesPerColumn: 3,
+    slidesPerGroup: 12,
+    slidesPerColumnFill: 'row',
+    loop:true,
+    // grid: {
+    //     rows: 3
+    // },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        420: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            // slidesPerColumn: 3,
+            // slidesPerGroup: 6,
+            // slidesPerColumnFill: 'row',
+            autoHeight: false,
+            grid: {
+                rows:2,
+                fill: "rows"
+            }
+        },
+        720: {
+            slidesPerView: 4,
+            // slidesPerColumn: 3,
+            // slidesPerGroup: 6,
+            spaceBetween: 27,
+            // autoHeight: false,
+            grid: {
+                rows: 2,
+                fill: "rows"
+            }
+        }
+    }
+});

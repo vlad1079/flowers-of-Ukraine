@@ -491,13 +491,27 @@ main.main .main_container .main_stock .main_stock_top .main_stock_arrow {
   -webkit-column-gap: 1.6875rem;
      -moz-column-gap: 1.6875rem;
           column-gap: 1.6875rem;
+  min-width: 0;
+  position: relative;
+}
+main.main .main_container .main_stock .main_stock_top .main_stock_arrow > .swiper-button-prev {
+  top: 0;
+  right: 3%;
+  color: #956d84;
+  width: 1rem;
+  height: 1.6875rem;
+}
+main.main .main_container .main_stock .main_stock_top .main_stock_arrow > .swiper-button-next {
+  top: 0;
+  right: 1%;
+  color: #956d84;
+  width: 1rem;
+  height: 1.6875rem;
 }
 main.main .main_container .main_stock .main_stock_blocks {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr);
+  -ms-grid-columns: (minmax(190px, 1fr))[4];
   grid-template-columns: repeat(4, minmax(190px, 1fr));
-  gap: 1.25rem;
+  row-gap: 1.25rem;
 }
 main.main .main_container .main_stock .main_stock_blocks .main_stock_card {
   border: 1px solid #956d84;
@@ -514,6 +528,7 @@ main.main .main_container .main_stock .main_stock_blocks .main_stock_card {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  min-width: 0;
 }
 main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_card_top {
   display: -webkit-box;
@@ -578,6 +593,8 @@ main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 0;
+  padding-bottom: 2rem;
 }
 main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_card_med > h3 {
   color: #333333;
@@ -599,6 +616,7 @@ main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 0;
 }
 main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_card_med .main_stock_card_price > span:nth-of-type(1) {
   color: #bdbdbd;
@@ -1845,11 +1863,9 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     display: none;
   }
   main.main .main_container .main_stock .main_stock_blocks {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: minmax(140px, 1fr) 0.5rem minmax(140px, 1fr);
+    -ms-grid-columns: (minmax(140px, 1fr))[2];
     grid-template-columns: repeat(2, minmax(140px, 1fr));
-    gap: 0.5rem;
+    row-gap: 0.5rem;
   }
   main.main .main_container .main_stock .main_stock_blocks .main_stock_card {
     position: relative;
@@ -1906,6 +1922,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 0.875rem;
+    padding-bottom: 0;
   }
   main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_card_med > h3 {
     font-size: 0.75rem;

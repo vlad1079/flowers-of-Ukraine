@@ -423,12 +423,30 @@ main.main {
                     display: flex;
                     justify-content: end;
                     column-gap: rem(27);
+                    min-width: 0;
+                    position: relative;
+                    & > .swiper-button-prev {
+                        top: 0;
+                        right: 3%;
+                        color: $colorBord;
+                        width: rem(16);
+                        height: rem(27);
+                    }
+                    & > .swiper-button-next {
+                        top: 0;
+                        right: 1%;
+                        color: $colorBord;
+                        width: rem(16);
+                        height: rem(27);
+                    }
                 }
             }
             .main_stock_blocks {
-                display: grid;
+                // display: grid;
+                // display:contents;
                 grid-template-columns: repeat(4, minmax(190px, 1fr));
-                gap: rem(20);
+                // gap: rem(20);
+                row-gap: rem(20);
                 .main_stock_card {
                     border: 1px solid #956d84;
                     // opacity: 0.5;
@@ -438,6 +456,7 @@ main.main {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    min-width: 0;
                     .main_stock_card_top {
                         display: flex;
                         justify-content: space-between;
@@ -480,6 +499,8 @@ main.main {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        min-width: 0;
+                        padding-bottom: rem(32);
                         & > h3 {
                             color: $colorBlack;
                             font-size: rem(18);
@@ -491,6 +512,7 @@ main.main {
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
+                            min-width: 0;
                             & > span:nth-of-type(1) {
                                 color: #bdbdbd;
                                 font-size: rem(18);
@@ -1562,9 +1584,9 @@ footer.footer {
                     }
                 }
                 .main_stock_blocks {
-                    display: grid;
+                    // display: grid;
                     grid-template-columns: repeat(2, minmax(140px, 1fr));
-                    gap: rem(8);
+                    row-gap: rem(8);
                     .main_stock_card {
                         position: relative;
                         border: 1px solid #956d84;
@@ -1609,6 +1631,7 @@ footer.footer {
                         .main_stock_card_med {
                             flex-direction: column;
                             row-gap: rem(14);
+                            padding-bottom: 0;
                             & > h3 {
                                 font-size: rem(12);
                             }
