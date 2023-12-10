@@ -457,6 +457,7 @@ main.main .main_container .main_photo_report .main_photo_report_blocks > div:nth
   max-width: 13.5625rem;
 }
 main.main .main_container .main_stock {
+  padding-top: 1.5625rem;
   padding-bottom: 8.75rem;
 }
 main.main .main_container .main_stock .main_stock_top {
@@ -493,17 +494,23 @@ main.main .main_container .main_stock .main_stock_top .main_stock_arrow {
           column-gap: 1.6875rem;
   min-width: 0;
   position: relative;
+  width: 5%;
+}
+main.main .main_container .main_stock .main_stock_top .main_stock_arrow .swiper-button-next:after,
+main.main .main_container .main_stock .main_stock_top .main_stock_arrow .swiper-button-prev:after {
+  font-size: 1.9375rem;
+  font-weight: 700;
 }
 main.main .main_container .main_stock .main_stock_top .main_stock_arrow > .swiper-button-prev {
   top: 0;
-  right: 3%;
+  left: -5%;
   color: #956d84;
   width: 1rem;
   height: 1.6875rem;
 }
 main.main .main_container .main_stock .main_stock_top .main_stock_arrow > .swiper-button-next {
   top: 0;
-  right: 1%;
+  right: 11%;
   color: #956d84;
   width: 1rem;
   height: 1.6875rem;
