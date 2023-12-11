@@ -64,21 +64,12 @@ const mainStock = document.querySelector('.main_stock');
 const mainStockBlocks = document.querySelector('.main_stock_blocks');
 
 new Swiper('.main_stock', {
-    // slidesPerView: 4,
-    // spaceBetween: 27,
-    // slidesPerColumn: 3,
-    // slidesPerGroup: 12,
-    // slidesPerColumnFill: 'row',
-    // loop:true,
-    // grid: {
-    //     rows: 3
-    // },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        420: {
+        320: {
             slidesPerView: 2,
             spaceBetween: 10,
             // slidesPerColumn: 3,
