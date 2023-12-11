@@ -66,10 +66,10 @@ const mainStockBlocks = document.querySelector('.main_stock_blocks');
 new Swiper('.main_stock', {
     // slidesPerView: 4,
     // spaceBetween: 27,
-    slidesPerColumn: 3,
-    slidesPerGroup: 12,
-    slidesPerColumnFill: 'row',
-    loop:true,
+    // slidesPerColumn: 3,
+    // slidesPerGroup: 12,
+    // slidesPerColumnFill: 'row',
+    // loop:true,
     // grid: {
     //     rows: 3
     // },
@@ -95,6 +95,7 @@ new Swiper('.main_stock', {
             // slidesPerColumn: 3,
             // slidesPerGroup: 6,
             spaceBetween: 27,
+            loop: true,
             // autoHeight: false,
             grid: {
                 rows: 2,
