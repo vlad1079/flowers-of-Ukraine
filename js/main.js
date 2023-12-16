@@ -76,6 +76,7 @@ new Swiper('.main_stock', {
             // slidesPerGroup: 6,
             // slidesPerColumnFill: 'row',
             autoHeight: false,
+            loop: true,
             grid: {
                 rows:2,
                 fill: "rows"
@@ -95,3 +96,92 @@ new Swiper('.main_stock', {
         }
     }
 });
+
+// sleder3
+const swiperNum3 = new Swiper('.main_sesonal' , {
+    navigation: {
+        nextEl: '.main_sesonal_arrowR',
+        prevEl: '.main_sesonal_arrowL',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            autoHeight: false,
+            loop: true,
+            grid: {
+                rows: 2,
+                fill: "rows"
+            }
+        },
+        720: {
+            slidesPerView: 4,
+            spaceBetween: 27,
+            loop: true,
+            grid: {
+                rows: 2,
+                fill: "rows"
+            }
+        }
+    }
+});
+
+// slider4
+
+const swiperNum4 = new Swiper('.main_gift', {
+    navigation: {
+        nextEl: '.main_gift_arrowR',
+        prevEl: '.main_gift_arrowL',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            autoHeight: false,
+            loop: true,
+            grid: {
+                rows: 2,
+                fill: "rows"
+            }
+        },
+        720: {
+            slidesPerView: 4,
+            spaceBetween: 27,
+            loop: true,
+            grid: {
+                rows: 2,
+                fill: "rows"
+            }
+        }
+    }
+});
+
+// slider5
+
+const mainForum = document.querySelector('.main_forum');
+const mainForumBlocks = document.querySelector('.main_forum_blocks');
+const mainForumBlocksCard = document.querySelectorAll('.main_forum_blocks_card');
+
+if (window.outerWidth < 421) {
+    mainForum.classList.add('swiper');
+    mainForumBlocks.classList.add('swiper-wrapper');
+    mainForumBlocksCard.forEach((el) => {
+        el.classList.add('swiper-slide');
+    });
+    var mySwiper2 = new Swiper('.main_forum', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+    });
+}
+else if (window.outerWidth > 421) {
+    mainForum.classList.remove('swiper');
+    mainForumBlocks.classList.remove('swiper-wrapper');
+    mainForumBlocksCard.forEach((el) => {
+        el.classList.remove('swiper-slide');
+    });
+    if (typeof mySwiper2 != 'undefined') {
+        mySwiper2.destroy();
+        mySwiper2 = undefined;
+    }
+}

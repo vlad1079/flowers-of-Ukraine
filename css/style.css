@@ -644,6 +644,20 @@ main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_
   min-width: -moz-max-content;
   min-width: max-content;
 }
+main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_bottom a:nth-of-type(1) {
   text-decoration: none;
   color: #fff;
@@ -676,12 +690,8 @@ main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_
 main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_bottom button {
   display: none;
 }
-main.main .main_container .main_stock .main_stock_card:nth-of-type(4n + 4) > picture > img {
-  position: relative;
-  max-width: 17.5625rem;
-  padding-bottom: 4.6875rem;
-}
 main.main .main_container .main_sesonal {
+  padding-top: 1.25rem;
   padding-bottom: 9rem;
 }
 main.main .main_container .main_sesonal .main_sesonal_top {
@@ -713,13 +723,28 @@ main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow {
   -webkit-column-gap: 1.6875rem;
      -moz-column-gap: 1.6875rem;
           column-gap: 1.6875rem;
+  min-width: 0;
+  position: relative;
+  width: 5%;
 }
-main.main .main_container .main_sesonal .main_sesonal_blocks {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr);
-  grid-template-columns: repeat(4, minmax(190px, 1fr));
-  gap: 1.25rem;
+main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow .main_sesonal_arrowR:after,
+main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow .main_sesonal_arrowL:after {
+  font-size: 1.9375rem;
+  font-weight: 700;
+}
+main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow > .main_sesonal_arrowL {
+  top: 0;
+  left: -5%;
+  color: #956d84;
+  width: 1rem;
+  height: 1.6875rem;
+}
+main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow > .main_sesonal_arrowR {
+  top: 0;
+  right: 11%;
+  color: #956d84;
+  width: 1rem;
+  height: 1.6875rem;
 }
 main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card {
   position: relative;
@@ -772,6 +797,9 @@ main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card 
   font-family: MyWebFont;
   margin-left: auto;
 }
+main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_stock_card_raiting {
+  padding-bottom: 1.625rem;
+}
 main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,6 +810,7 @@ main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 2.5rem;
 }
 main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > h3 {
   color: #333333;
@@ -798,7 +827,19 @@ main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card 
   min-width: -moz-max-content;
   min-width: max-content;
 }
-main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:first-of-type {
+main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom a:first-of-type {
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -816,7 +857,7 @@ main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card 
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
           box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
 }
-main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:last-of-type {
+main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom a:last-of-type {
   color: #828282;
   text-align: center;
   font-family: Euclid Circular B;
@@ -827,16 +868,11 @@ main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card 
   text-decoration-line: underline;
   padding-top: 1rem;
 }
-main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 2) .main_sesonal_card_top {
-  padding-bottom: 3.5625rem;
-}
-main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 3) .main_sesonal_card_top {
-  padding-bottom: 4.1875rem;
-}
-main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 4) .main_sesonal_card_top {
-  padding-bottom: 6.625rem;
+main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom > img {
+  display: none;
 }
 main.main .main_container .main_gift {
+  padding-top: 1.5625rem;
   padding-bottom: 7.1875rem;
 }
 main.main .main_container .main_gift .main_gift_top {
@@ -868,13 +904,28 @@ main.main .main_container .main_gift .main_gift_top .main_gift_arrow {
   -webkit-column-gap: 1.6875rem;
      -moz-column-gap: 1.6875rem;
           column-gap: 1.6875rem;
+  min-width: 0;
+  position: relative;
+  width: 5%;
 }
-main.main .main_container .main_gift .main_gift_blocks {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr);
-  grid-template-columns: repeat(4, minmax(190px, 1fr));
-  gap: 1.25rem;
+main.main .main_container .main_gift .main_gift_top .main_gift_arrow .main_gift_arrowR:after,
+main.main .main_container .main_gift .main_gift_top .main_gift_arrow .main_gift_arrowL:after {
+  font-size: 1.9375rem;
+  font-weight: 700;
+}
+main.main .main_container .main_gift .main_gift_top .main_gift_arrow > .main_gift_arrowL {
+  top: 0;
+  left: -5%;
+  color: #956d84;
+  width: 1rem;
+  height: 1.6875rem;
+}
+main.main .main_container .main_gift .main_gift_top .main_gift_arrow > .main_gift_arrowR {
+  top: 0;
+  right: 11%;
+  color: #956d84;
+  width: 1rem;
+  height: 1.6875rem;
 }
 main.main .main_container .main_gift .main_gift_blocks .main_gift_card {
   position: relative;
@@ -924,6 +975,10 @@ main.main .main_container .main_gift .main_gift_blocks .main_gift_card > span {
   background-color: rgba(157, 117, 140, 0.39);
   text-transform: uppercase;
 }
+main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_raiting {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5625rem;
+}
 main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -934,6 +989,7 @@ main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gif
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 2.1875rem;
 }
 main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price > h3 {
   color: #333333;
@@ -950,7 +1006,21 @@ main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gif
   min-width: -moz-max-content;
   min-width: max-content;
 }
-main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:first-of-type {
+main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom a:first-of-type {
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -968,7 +1038,7 @@ main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:first-o
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
           box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
 }
-main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:last-of-type {
+main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom a:last-of-type {
   color: #828282;
   text-align: center;
   font-family: Euclid Circular B;
@@ -978,6 +1048,9 @@ main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:last-of
   line-height: 1.125rem;
   text-decoration-line: underline;
   padding-top: 1rem;
+}
+main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom > picture {
+  display: none;
 }
 main.main .main_container .main_forum {
   padding-bottom: 5rem;
@@ -1984,7 +2057,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     padding-bottom: 0;
   }
   main.main .main_container .main_sesonal {
-    padding-bottom: 9rem;
+    padding-bottom: 1.875rem;
   }
   main.main .main_container .main_sesonal .main_sesonal_top {
     display: -webkit-box;
@@ -1996,37 +2069,18 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 2.125rem;
+    padding-bottom: 0.75rem;
   }
   main.main .main_container .main_sesonal .main_sesonal_top > h2 {
-    color: #000;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.125rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    font-size: 1.5rem;
   }
   main.main .main_container .main_sesonal .main_sesonal_top .main_sesonal_arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-column-gap: 1.6875rem;
-       -moz-column-gap: 1.6875rem;
-            column-gap: 1.6875rem;
-  }
-  main.main .main_container .main_sesonal .main_sesonal_blocks {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr);
-    grid-template-columns: repeat(4, minmax(190px, 1fr));
-    gap: 1.25rem;
+    display: none;
   }
   main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card {
     position: relative;
     border: 1px solid #956d84;
-    padding: 5px 20px 15px 20px;
+    padding: 0.625rem;
     background-color: #fff;
     -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -2044,37 +2098,38 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     position: absolute;
     top: 7%;
     right: 9%;
+    max-width: 0.875rem;
   }
   main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_top picture:nth-of-type(2) img {
     width: 100%;
   }
   main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card > span {
-    position: absolute;
-    right: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #956d84;
-    font-family: Euclid Circular B;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.125rem;
-    width: 56px;
-    height: 56px;
-    border: 1px solid rgba(157, 117, 140, 0.39);
-    border-radius: 50%;
-    background-color: rgba(157, 117, 140, 0.39);
-    text-transform: uppercase;
-    font-family: MyWebFont;
-    margin-left: auto;
+    font-size: 0.625rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_raiting {
+    padding-bottom: 0;
+  }
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_raiting picture img {
+    max-width: 1.875rem;
   }
   main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > h3 {
+    font-size: 0.75rem;
+  }
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > span {
+    font-size: 0.875rem;
+  }
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2084,41 +2139,15 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > h3 {
-    color: #333333;
-    font-size: 1.125rem;
-    font-weight: 300;
-    line-height: 1.125rem;
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom a:first-of-type {
+    display: none;
   }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_card_price > span {
-    color: #956d84;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 1.125rem;
-    min-width: -webkit-max-content;
-    min-width: -moz-max-content;
-    min-width: max-content;
-  }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:first-of-type {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    font-family: "Museo Sans Cyrl";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.125rem;
-    padding: 1.375rem 3.25rem;
-    max-width: 13.75rem;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 0.4375rem;
-    background-color: #956d84;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
-            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
-  }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card a:last-of-type {
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom a:last-of-type {
     color: #828282;
     text-align: center;
     font-family: Euclid Circular B;
@@ -2127,56 +2156,22 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     font-weight: 400;
     line-height: 1.125rem;
     text-decoration-line: underline;
-    padding-top: 1rem;
+    padding-top: 0;
   }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 2) .main_sesonal_card_top {
-    padding-bottom: 3.5625rem;
-  }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 3) .main_sesonal_card_top {
-    padding-bottom: 4.1875rem;
-  }
-  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card:nth-of-type(4n + 4) .main_sesonal_card_top {
-    padding-bottom: 6.625rem;
+  main.main .main_container .main_sesonal .main_sesonal_blocks .main_sesonal_card .main_sesonal_bottom > img {
+    display: block;
   }
   main.main .main_container .main_gift {
-    padding-bottom: 7.1875rem;
+    padding-bottom: 3.75rem;
   }
   main.main .main_container .main_gift .main_gift_top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-bottom: 2.125rem;
   }
   main.main .main_container .main_gift .main_gift_top > h2 {
-    color: #000;
-    text-align: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.125rem;
+    font-size: 1.5rem;
   }
   main.main .main_container .main_gift .main_gift_top .main_gift_arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-column-gap: 1.6875rem;
-       -moz-column-gap: 1.6875rem;
-            column-gap: 1.6875rem;
-  }
-  main.main .main_container .main_gift .main_gift_blocks {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr);
-    grid-template-columns: repeat(4, minmax(190px, 1fr));
-    gap: 1.25rem;
+    display: none;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card {
     position: relative;
@@ -2190,144 +2185,82 @@ footer.footer .footer_container .footer_bottom > div > picture img {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 1.25rem 1.25rem 0.9375rem 1.25rem;
+    padding: 0.625rem 0.3125rem;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card > picture:nth-of-type(1) > img {
-    position: absolute;
-    top: 4%;
-    right: 7%;
+    max-width: 0.875rem;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card > picture:nth-of-type(2) > img {
-    width: 100%;
     max-width: 17.6875rem;
-    max-height: 13rem;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card > span {
     position: absolute;
-    top: 50%;
+    top: initial;
     right: 7%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #956d84;
-    font-family: Euclid Circular B;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.625rem;
     line-height: 1.125rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    background-color: rgba(157, 117, 140, 0.39);
-    text-transform: uppercase;
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_raiting {
+    padding-top: 0;
+    padding-bottom: 0.625rem;
+  }
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_raiting picture img {
+    max-width: 1.875rem;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0.5625rem;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price > h3 {
-    color: #333333;
-    font-size: 1.125rem;
-    font-weight: 300;
-    line-height: 1.125rem;
+    font-size: 0.75rem;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_price > span {
-    color: #956d84;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 1.125rem;
-    min-width: -webkit-max-content;
-    min-width: -moz-max-content;
-    min-width: max-content;
+    font-size: 0.875rem;
   }
-  main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:first-of-type {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    font-family: "Museo Sans Cyrl";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.125rem;
-    padding: 1.375rem 3.25rem;
-    max-width: 13.75rem;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 0.4375rem;
-    background-color: #956d84;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
-            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15) inset;
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
   }
-  main.main .main_container .main_gift .main_gift_blocks .main_gift_card a:last-of-type {
-    color: #828282;
-    text-align: center;
-    font-family: Euclid Circular B;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.125rem;
-    text-decoration-line: underline;
-    padding-top: 1rem;
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom a:first-of-type {
+    display: none;
+  }
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom a:last-of-type {
+    font-size: 0.625rem;
+    padding-top: 0rem;
+  }
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom picture {
+    display: block;
+  }
+  main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom picture img {
+    display: block;
   }
   main.main .main_container .main_forum {
     padding-bottom: 5rem;
   }
   main.main .main_container .main_forum .main_forum_top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 2.6875rem;
+    padding-bottom: 1.5rem;
   }
   main.main .main_container .main_forum .main_forum_top > h2 {
-    color: #000;
-    text-align: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    font-family: "Museo Sans Cyrl";
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.125rem;
+    font-size: 1.5rem;
   }
-  main.main .main_container .main_forum .main_forum_top .main_forum_top_new > a {
-    max-width: 8.9375rem;
+  main.main .main_container .main_forum .main_forum_top .main_forum_top_new {
+    display: none;
+  }
+  main.main .main_container .main_forum .main_forum_blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 0.25rem;
-       -moz-column-gap: 0.25rem;
-            column-gap: 0.25rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-decoration: none;
-  }
-  main.main .main_container .main_forum .main_forum_blocks {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: minmax(190px, 1fr) 1.25rem minmax(190px, 1fr) 1.25rem minmax(190px, 1fr);
-    grid-template-columns: repeat(3, minmax(190px, 1fr));
-    -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
-            column-gap: 1.25rem;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    min-width: 0;
   }
   main.main .main_container .main_forum .main_forum_blocks picture img {
     width: 100%;
@@ -2346,18 +2279,13 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     background-image: linear-gradient(to top, #956d84 70%, white 30%);
     padding: 0 1.25rem 1.25rem;
     text-decoration: none;
+    min-width: 0;
   }
   main.main .main_container .main_forum .main_forum_blocks .main_forum_blocks_card > h2 {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.5625rem;
+    font-size: 0.875rem;
   }
   main.main .main_container .main_forum .main_forum_blocks .main_forum_blocks_card > p {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 250;
-    line-height: 1.125rem;
+    font-size: 0.75rem;
   }
   main.main .main_container .main_map_contact {
     padding-bottom: 5.3125rem;
