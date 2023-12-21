@@ -185,3 +185,20 @@ else if (window.outerWidth > 421) {
         mySwiper2 = undefined;
     }
 }
+
+// footer menu
+
+let footerArrow = document.querySelectorAll('.footer_top_right_menu_arrow');
+for (let i = 0; i < footerArrow.length; i++) {
+    let footerMenu = footerArrow[i].parentElement;
+    let footerMenu2 = footerMenu.parentElement;
+    let thisArrow = footerArrow[i];
+    console.log(footerMenu2);
+    footerArrow[i].addEventListener('click' , function() {
+        thisArrow.classList.toggle('active');
+        footerMenu2.classList.toggle('open');
+    });
+
+};
+
+
