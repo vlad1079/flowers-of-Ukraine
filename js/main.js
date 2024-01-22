@@ -3,15 +3,18 @@
 const menuBurger = document.querySelector('.header_content_center_menu_burger');
 const burgerList = document.querySelector('.header_content_center_menu_burger_list');
 const burgerSub = document.querySelector('.header_content_center_menu_burger_sub span');
+const burgerSearch = document.querySelector('.header_content_right_search');
 if (menuBurger) {
     menuBurger.addEventListener('click' , function (e) {
         burgerList.classList.add('_active');
+        burgerSearch.classList.add('_active');
         document.body.classList.add('_lock');
     });
 }
 
 burgerSub.addEventListener('click' , function (e) {
     burgerList.classList.remove('_active');
+    burgerSearch.classList.remove('_active');
     document.body.classList.remove('_lock');
 });
 

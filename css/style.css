@@ -1752,11 +1752,9 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
   }
   header.header .header_content .header_content_container .header_content_right div.header_content_right_favorites_basket .header_content_right_search > div > input:focus {
     width: 150px;
-    z-index: 1;
     border-bottom: 2px solid #f9f0da;
   }
   header.header .header_content .header_content_container .header_content_right div.header_content_right_favorites_basket .header_content_right_search > div > button {
@@ -1771,6 +1769,9 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     background-image: url("../images/header/header_content/search.svg");
     background-repeat: no-repeat;
     background-position: top right;
+  }
+  header.header .header_content .header_content_container .header_content_right div.header_content_right_favorites_basket .header_content_right_search._active {
+    display: none;
   }
   header.header .header_content .header_content_container .header_content_right div.header_content_right_favorites_basket > div:nth-of-type(3) {
     display: block;
