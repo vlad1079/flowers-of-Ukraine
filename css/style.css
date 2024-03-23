@@ -1748,6 +1748,14 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     transition: transform 0.3s ease 0s;
     transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:hover > a {
+    color: #956d84;
+    font-weight: 600;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:hover > div > a {
+    color: #956d84;
+    font-weight: 600;
+  }
   header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(2) {
     display: -webkit-box;
     display: -ms-flexbox;

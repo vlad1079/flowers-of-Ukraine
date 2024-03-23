@@ -1457,12 +1457,20 @@ footer.footer {
                                     margin-right: rem(20);
                                 }
                                 & > li {
-                                    // & > a {
-                                    //     font-weight: 600;
-                                    // }
                                     i {
-                                        // transform: rotate(90deg);
                                         transition: transform 0.3s ease 0s;
+                                    }
+                                }
+                                & > li:hover {
+                                    & > a {
+                                        color: $colorBord;
+                                        font-weight: 600;
+                                    }
+                                    & > div {
+                                        & > a {
+                                            color: $colorBord;
+                                            font-weight: 600;
+                                        }
                                     }
                                 }
                                 & > li:nth-of-type(2) {
