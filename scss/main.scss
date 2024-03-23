@@ -1408,7 +1408,8 @@ footer.footer {
                                 color: $colorBlack;
                                 font-family: $fontMyseo;
                                 font-size: rem(16);
-                                font-weight: 600;
+                                font-weight: 300;
+                                line-height: 112%;
                                 line-height: rem(18);
                                 overflow: auto;
                                 & > li:nth-of-type(1) {
@@ -1430,6 +1431,7 @@ footer.footer {
                                         position: relative;
                                         width: rem(20);
                                         height: rem(20);
+                                        z-index: 1;
                                     }
                                     & > span::before,
                                     span::after {
@@ -1453,6 +1455,15 @@ footer.footer {
                                 & > li {
                                     margin-left: rem(20);
                                     margin-right: rem(20);
+                                }
+                                & > li {
+                                    // & > a {
+                                    //     font-weight: 600;
+                                    // }
+                                    i {
+                                        // transform: rotate(90deg);
+                                        transition: transform 0.3s ease 0s;
+                                    }
                                 }
                                 & > li:nth-of-type(2) {
                                     display: flex;
@@ -1494,16 +1505,106 @@ footer.footer {
                                     justify-content: space-between;
                                     align-items: center;
                                 }
-                                & > li:nth-of-type(10) {
-                                    display: flex;
-                                    column-gap: rem(14);
-                                    align-items: center;
+                                & > li:nth-of-type(5) {
+                                    position: relative;
+                                    & > div {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    & > ul.burger_menu_first {
+                                        position: absolute;
+                                        left: 0;
+                                        transform: translate(0px, 10px);
+                                        transition: all 0.3s ease 0s;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        pointer-events: none;
+                                        & > li {
+                                            padding: rem(10) 0 rem(10) rem(112);
+                                        }
+                                        & > li:hover {
+                                            background-color: $colorBord;
+                                            & > a {
+                                                color: $colorWhite;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                    /* ---------------------------------  */
+
+                                    /* --------------------------------- */
+
+                                    //     & > ul.burger_menu_first._opened {
+                                    //         position: relative;
+                                    //         transform: translate(0px, 0px);
+                                    //         opacity: 1;
+                                    //         // & > li {
+                                    //         //     & > a {
+                                    //         //         font-weight: 700;
+                                    //         //     }
+                                    //         // }
+                                    //         & > li:hover {
+                                    //             padding: rem(10) 0 rem(10) rem(112);
+                                    //             background-color: $colorBord;
+                                    //             & > a {
+                                    //                 font-weight: 700;
+                                    //                 color: $colorWhite;
+                                    //             }
+                                    //         }
+                                    //     }
+                                    // }
+                                }
+                                & > li._opened {
                                     & > a {
                                         color: $colorBord;
                                         font-weight: 700;
                                     }
+                                    & > i {
+                                        transform: rotate(90deg);
+                                        transition: all 0.3s ease 0s;
+                                    }
+                                    & > div {
+                                        & > a {
+                                            color: $colorBord;
+                                            font-weight: 700;
+                                        }
+                                        & > i {
+                                            transform: rotate(90deg);
+                                            transition: transform 0.3s ease 0s;
+                                        }
+                                    }
+                                    & > ul.burger_menu_first {
+                                        position: relative;
+                                        transform: translate(0px, 0px);
+                                        opacity: 1;
+                                        visibility: visible;
+                                        pointer-events: all;
+                                        // & > li {
+                                        //     & > a {
+                                        //         font-weight: 700;
+                                        //     }
+                                        // }
+                                        & > li:hover {
+                                            padding: rem(10) 0 rem(10) rem(112);
+                                            background-color: $colorBord;
+                                            & > a {
+                                                font-weight: 700;
+                                                color: $colorWhite;
+                                            }
+                                        }
+                                    }
                                 }
                                 & > li:nth-of-type(11) {
+                                    display: flex;
+                                    column-gap: rem(14);
+                                    align-items: center;
+                                    // & > a {
+                                    //     color: $colorBord;
+                                    //     font-weight: 700;
+                                    // }
+                                }
+                                & > li:nth-of-type(12) {
                                     display: flex;
                                     column-gap: rem(23);
                                     justify-content: center;
@@ -1514,6 +1615,20 @@ footer.footer {
                                     margin-bottom: rem(50);
                                 }
                             }
+                            // ul.header_content_center_menu_burger_sub:hover {
+                            //     & > li:nth-of-type(1n + 4) {
+                            //         & > a {
+                            //             color: $colorBord;
+                            //             font-weight: 700;
+                            //         }
+                            //         & > div {
+                            //             & > a {
+                            //                 color: $colorBord;
+                            //                 font-weight: 700;
+                            //             }
+                            //         }
+                            //     }
+                            // }
                         }
                         .header_content_center_menu_burger_list._active {
                             display: block;
@@ -1522,12 +1637,12 @@ footer.footer {
                                 // display: flex;
                                 left: 0;
                                 transition: left 0.8s ease 0s;
-                                & > li:hover {
-                                    a {
-                                        color: $colorBord;
-                                        font-weight: 700;
-                                    }
-                                }
+                                // & > li:hover {
+                                //     a {
+                                //         color: $colorBord;
+                                //         font-weight: 700;
+                                //     }
+                                // }
                             }
                         }
                         & > ul:nth-of-type(1) {

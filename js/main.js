@@ -2,7 +2,7 @@
 
 const menuBurger = document.querySelector('.header_content_center_menu_burger');
 const burgerList = document.querySelector('.header_content_center_menu_burger_list');
-const burgerSub = document.querySelector('.header_content_center_menu_burger_sub span');
+const burgerSub = document.querySelector('.header_content_center_menu_burger_sub > li > span');
 const burgerSearch = document.querySelector('.header_content_right_search');
 if (menuBurger) {
     menuBurger.addEventListener('click' , function (e) {
@@ -17,6 +17,13 @@ burgerSub.addEventListener('click' , function (e) {
     burgerSearch.classList.remove('_active');
     document.body.classList.remove('_lock');
 });
+
+
+const burgerMenuFirst = document.getElementById('burger_sub');
+const menuFirst = burgerMenuFirst.addEventListener('click' ,function (el) {
+    if (el.target.tagName != 'LI') return;
+    el.target.classList.toggle('_opened');
+})
 
 // slider Swiper
 

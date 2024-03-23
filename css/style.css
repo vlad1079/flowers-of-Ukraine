@@ -1684,7 +1684,8 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     color: #333333;
     font-family: "Museo Sans Cyrl";
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
+    line-height: 112%;
     line-height: 1.125rem;
     overflow: auto;
   }
@@ -1714,6 +1715,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     position: relative;
     width: 1.25rem;
     height: 1.25rem;
+    z-index: 1;
   }
   header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(1) > span::before,
   header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(1) span::after {
@@ -1739,6 +1741,12 @@ footer.footer .footer_container .footer_bottom > div > picture img {
   header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li i {
+    -webkit-transition: -webkit-transform 0.3s ease 0s;
+    transition: -webkit-transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   }
   header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(2) {
     display: -webkit-box;
@@ -1798,7 +1806,82 @@ footer.footer .footer_container .footer_bottom > div > picture img {
         -ms-flex-align: center;
             align-items: center;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(10) {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(5) {
+    position: relative;
+    /* ---------------------------------  */
+    /* --------------------------------- */
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(5) > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(5) > ul.burger_menu_first {
+    position: absolute;
+    left: 0;
+    -webkit-transform: translate(0px, 10px);
+            transform: translate(0px, 10px);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(5) > ul.burger_menu_first > li {
+    padding: 0.625rem 0 0.625rem 7rem;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(5) > ul.burger_menu_first > li:hover {
+    background-color: #956d84;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(5) > ul.burger_menu_first > li:hover > a {
+    color: #fff;
+    font-weight: 700;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > a {
+    color: #956d84;
+    font-weight: 700;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > i {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > div > a {
+    color: #956d84;
+    font-weight: 700;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > div > i {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s ease 0s;
+    transition: -webkit-transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > ul.burger_menu_first {
+    position: relative;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > ul.burger_menu_first > li:hover {
+    padding: 0.625rem 0 0.625rem 7rem;
+    background-color: #956d84;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > ul.burger_menu_first > li:hover > a {
+    font-weight: 700;
+    color: #fff;
+  }
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(11) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1809,11 +1892,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
         -ms-flex-align: center;
             align-items: center;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(10) > a {
-    color: #956d84;
-    font-weight: 700;
-  }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(11) {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li:nth-of-type(12) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1840,10 +1919,6 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     left: 0;
     -webkit-transition: left 0.8s ease 0s;
     transition: left 0.8s ease 0s;
-  }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list._active ul.header_content_center_menu_burger_sub > li:hover a {
-    color: #956d84;
-    font-weight: 700;
   }
   header.header .header_content .header_content_container .header_content_center .header_content_center_menu > ul:nth-of-type(1) {
     position: fixed;
