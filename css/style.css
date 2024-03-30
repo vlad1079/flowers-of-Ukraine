@@ -1851,21 +1851,21 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     color: #fff;
     font-weight: 700;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > a {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > a {
     color: #956d84;
     font-weight: 700;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > i {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > i {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > div > a {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > div > a {
     color: #956d84;
     font-weight: 700;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > div > i {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > div > i {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     -webkit-transition: -webkit-transform 0.3s ease 0s;
@@ -1873,7 +1873,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     transition: transform 0.3s ease 0s;
     transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > ul.burger_menu_first {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > ul.burger_menu_first {
     position: relative;
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
@@ -1881,11 +1881,11 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     visibility: visible;
     pointer-events: all;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > ul.burger_menu_first > li:hover {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > ul.burger_menu_first > li:hover {
     padding: 0.625rem 0 0.625rem 7rem;
     background-color: #956d84;
   }
-  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._opened > ul.burger_menu_first > li:hover > a {
+  header.header .header_content .header_content_container .header_content_center .header_content_center_menu .header_content_center_menu_burger_list ul.header_content_center_menu_burger_sub > li._open > ul.burger_menu_first > li:hover > a {
     font-weight: 700;
     color: #fff;
   }

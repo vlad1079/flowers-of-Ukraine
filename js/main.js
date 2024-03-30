@@ -19,11 +19,14 @@ burgerSub.addEventListener('click' , function (e) {
 });
 
 
-const burgerMenuFirst = document.getElementById('burger_sub');
-const menuFirst = burgerMenuFirst.addEventListener('click' ,function (el) {
-    if (el.target.tagName != 'LI') return;
-    el.target.classList.toggle('_opened');
-})
+const burgerMenuFirst = document.querySelectorAll('.burger_menu_f');
+for (let index = 0; index < burgerMenuFirst.length; index++) {
+    const el = burgerMenuFirst[index];
+    el.addEventListener("click" , function (e) {
+        el.parentElement.classList.toggle('_open');
+    });
+    
+}
 
 // slider Swiper
 
