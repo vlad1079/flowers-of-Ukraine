@@ -138,7 +138,7 @@ header.header {
         }
     }
     .header_content {
-        padding-top: rem(65);
+        padding-top: rem(52);
         background-color: $colorWhite;
         .header_content_container {
             max-width: rem(1450);
@@ -163,6 +163,7 @@ header.header {
                     display: flex;
                     align-items: center;
                     column-gap: rem(21);
+                    padding-bottom: rem(47);
                     input {
                         width: 100%;
                         border-bottom: 1px solid #956d84;
@@ -196,6 +197,7 @@ header.header {
                         line-height: rem(18);
                         text-transform: none;
                         list-style: none;
+                        justify-content: center;
                         & > li {
                             & > a {
                                 color: $colorBlack;
@@ -436,15 +438,15 @@ main.main {
                 }
                 .main_discount4 {
                     grid-area: 2 / 3 / 3 / 4;
-                    max-width: rem(336);
-                    max-height: rem(321);
+                    // max-width: rem(345);
+                    // max-height: rem(330);
                     background-color: #ffdb6b;
                     picture {
                         img {
                             width: calc(100vw / 4 - 69px);
                             display: block;
-                            max-width: rem(336);
-                            max-height: rem(321);
+                            max-width: rem(345);
+                            max-height: rem(330);
                             height: 100%;
                             margin-left: auto;
                             object-fit: cover;
@@ -1172,11 +1174,11 @@ footer.footer {
             }
             .footer_top_right {
                 display: flex;
-                column-gap: rem(95);
+                column-gap: rem(90);
                 text-transform: uppercase;
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: 300;
-                line-height: 18px;
+                line-height: rem(18);
                 a {
                     color: $colorWhite;
                     text-decoration: none;
@@ -1187,9 +1189,16 @@ footer.footer {
                         font-weight: 700;
                         line-height: rem(18);
                         padding-bottom: rem(38);
+                        width: max-content;
                         & > span {
                             display: none;
                         }
+                    }
+                    & > li:nth-of-type(1n + 2) {
+                        padding-bottom: rem(20);
+                    }
+                    & > li:last-of-type {
+                        padding-bottom: 0;
                     }
                 }
                 ul {
