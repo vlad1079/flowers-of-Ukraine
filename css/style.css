@@ -1427,7 +1427,7 @@ footer.footer .footer_container .footer_top .footer_top_right ul > li:nth-of-typ
   display: none;
 }
 footer.footer .footer_container .footer_top .footer_top_right ul > li:nth-of-type(1n + 2) {
-  padding-bottom: 1.25rem;
+  padding-bottom: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -2230,7 +2230,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
   main.main .main_container .main_stock .main_stock_blocks .main_stock_card {
     position: relative;
     border: 1px solid #956d84;
-    padding: 5px 4px 11px 4px;
+    padding: 0.625rem;
     background-color: #fff;
     -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -2322,12 +2322,22 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_bottom a:nth-of-type(1) {
     display: none;
   }
   main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_bottom a:nth-of-type(2) {
-    font-size: 0.625rem;
+    font-size: 1rem;
+    padding-top: 0;
+    color: #828282;
+    text-align: center;
+    font-family: Euclid Circular B;
+    font-weight: 400;
+    line-height: 1.125rem;
+    text-decoration-line: underline;
   }
   main.main .main_container .main_stock .main_stock_blocks .main_stock_card .main_stock_bottom button {
     display: block;
@@ -2516,8 +2526,14 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     display: none;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom a:last-of-type {
-    font-size: 0.625rem;
+    font-size: 1rem;
     padding-top: 0rem;
+    color: #828282;
+    text-align: center;
+    font-family: Euclid Circular B;
+    font-weight: 400;
+    line-height: 1.125rem;
+    text-decoration-line: underline;
   }
   main.main .main_container .main_gift .main_gift_blocks .main_gift_card .main_gift_card_bottom picture {
     display: block;
@@ -2722,7 +2738,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 1.25rem;
+    row-gap: 0.9375rem;
   }
   footer.footer .footer_container .footer_top .footer_top_right ul li:nth-of-type(1) {
     display: -webkit-box;
@@ -2734,6 +2750,7 @@ footer.footer .footer_container .footer_bottom > div > picture img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   footer.footer .footer_container .footer_top .footer_top_right ul > li:nth-of-type(n + 2) {
     display: none;
